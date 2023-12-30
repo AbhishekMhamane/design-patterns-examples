@@ -1,8 +1,9 @@
-package observer_pattern;
+package behavioral.observer_pattern;
 
 public class WeatherStation {
 
-    static public void callWeatherStation(){
+    public static void main(String[] args) {
+        System.out.println("\n-- Observer Pattern ---");
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay display = new CurrentConditionsDisplay(weatherData);
         weatherData.setMeasurements(0, 0, 0);

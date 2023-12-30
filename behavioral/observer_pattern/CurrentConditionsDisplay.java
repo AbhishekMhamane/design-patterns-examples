@@ -1,4 +1,4 @@
-package observer_pattern;
+package behavioral.observer_pattern;
 
 public class CurrentConditionsDisplay implements Observer,DisplayElement {
     private float temperature;

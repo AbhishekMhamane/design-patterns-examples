@@ -1,20 +1,9 @@
-import decorator_pattern.Coffee;
-import decorator_pattern.Espresso;
-import decorator_pattern.Mocha;
-import decorator_pattern.Whip;
-import observer_pattern.WeatherStation;
+package decorator_pattern;
 
-public class Main {
+public class RunMe {
     
     public static void main(String[] args) {
-
-        //first
-
-        //observer pattern
-        System.out.println("\n-- Observer Pattern ---");
-        WeatherStation.callWeatherStation();
-
-        //decorator pattern
+        
         System.out.println("\n-- Decorator Pattern ---");
         Coffee beverage = new Espresso();
         beverage = new Mocha(beverage);
@@ -22,6 +11,5 @@ public class Main {
         beverage = new Whip(beverage);
         beverage = new Whip(beverage);
         System.out.println(beverage.getDescription() + " "+beverage.cost());
-        
     }
 }
